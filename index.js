@@ -331,13 +331,12 @@
 //     else if(player1 == "rock" && player2 == "scissors") return "Winner: Player-1";
 //     else if(player1 == "paper" && player2 == "rock") return "Winner: Player-1";
 //     else if(player1 == "scissors" && player2 == "paper") return "Winner: Player-1";
-    
+
 //     else if(player2 == "rock" && player1 == "scissors") return "Winner: Player-2";
 //     else if(player2 == "paper" && player1 == "rock") return "Winner: Player-2";
 //     else if(player2 == "scissors" && player1 == "paper") return "Winner: Player-2";
 // }
 // console.log(rockPaperScissors("scissors", "paper"));
-
 
 // Exercise 6
 
@@ -347,14 +346,28 @@
 // Examples:
 // numberJoinerWhile(1, 10) --> '1_2_3_4_5_6_7_8_9_10'
 // numberJoinerWhile(12, 14) --> '12_13_14'
-function numberJoinerWhile(number1, number2) {
-    while (i = 0){
-        
-    }
-}
+// function numberJoinerWhile(start, end) {
+//   let underline = "_";
+//   let current = start;
+//   while (current <= end) {
+//   }return result
+// }
+// console.log(numberJoinerWhile(1, 10));
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "numberJoinerFor" which does the same thing as "numberJoinerWhile",
 // except using a "for" loop internally.
+// function numberJoinerFor(start, end) {
+//   let lastNumber = "";
+//   let udnerLine = "_";
+//   for (start = lastNumber; start <= end; start++) {
+
+//     lastNumber += udnerLine + start
+
+//   }
+//   return lastNumber
+// }
+// console.log(numberJoinerFor(1, 10));
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "numberJoinerFancy" which does the same thing as "numberJoinerWhile",
@@ -364,8 +377,16 @@ function numberJoinerWhile(number1, number2) {
 // numberJoinerFancy(1, 10) --> '1_2_3_4_5_6_7_8_9_10'
 // numberJoinerFancy(1, 5, '~') --> 1~2~3~4~5
 // numberJoinerFancy(3, 6, '***BANANAS***') --> 1***BANANAS***2***BANANAS***3
-
-
+// function numberJoinerFancy
+// function numberJoinerFor(start, end) {
+//   let lastNumber = "";
+//   let underLine = `***BANANAS***`;
+//   for (start = start; start <= end; start++) {
+//     lastNumber += start + underLine;
+//   }
+//   return lastNumber;
+// }
+// console.log(numberJoinerFor(3, 6));
 
 // Exercise 7
 
@@ -374,6 +395,11 @@ function numberJoinerWhile(number1, number2) {
 //
 // Example:
 // reverse("skoob") --> "books"
+// function reverse(string1){
+//     string1 = "skoob";
+//     return string1.split("").reverse().join("");
+// }
+// console.log(reverse());
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "findLongestWord" that takes a string of words and returns
@@ -382,6 +408,18 @@ function numberJoinerWhile(number1, number2) {
 //
 // Example:
 // findLongestWord('a book full of dogs') --> 'book'
+function findLongestWord(sentences) {
+    const words = sentences.split(` `);
+    let longestWord = ``;
+    for (i = 1; i <= sentences; i++){
+
+    }
+    }
+
+
+   
+
+console.log(findLongestWord(`a book full of dogs`));
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function called "nicer"
