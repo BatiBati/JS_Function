@@ -140,7 +140,6 @@
 // console.log(oneDevideByTwo(20, 5));
 // console.log(oneDevideByTwo(20, 10));
 
-
 // Exercise 8
 
 // Create a function that takes in a mood and return a sentence in the following format:
@@ -148,37 +147,77 @@
 // moodToday("happy") ➞ "Today, I am feeling happy"
 // moodToday( ) ➞ "Today, I am feeling neuter"
 
+// function moodToday(mood) {
+//   if (mood == "Happy") {
+//     return "Today, I am feeling happy";
+//   } else if (mood !== "Happy" || " "){
+//     return "Today, I am feeling neuter";
+//   }
+// }
+// console.log(moodToday("Happy"));
+
 // Exercise 9
 
 // Write a function that validates whether two strings are identical. Make it case insensitive.
 // match(“HELLO WORLD”) and (”hello world”) → true
 // match("mask", "mAskinG") ➞ false
+// function match(word1, word2) {
+//   if (word1.toUpperCase() === word2.toUpperCase()) {
+//     return "True";
+//   } else {
+//     return "False";
+//   }
+// }
+// console.log(match("HELLO WORLD", "HELLO worlD"));
 
 // Exercise 10
 
-// Create a function that takes a string as argument and returns "upper" if all the letters in a word are uppercase, "lower" if lowercase and "mixed" for any mix of the two.
+// Create a function that takes a string as argument and returns "upper" if all the letters in a word are uppercase,
+// "lower" if lowercase and "mixed" for any mix of the two.
 // getCase("javascript..") ➞ "lower"
 // getCase("SHOUT!") ➞ "upper"
+// function getCase(word1) {
+//   if (word1 == word1.toUpperCase()) {
+//     return "UpperCase";
+//   } else if (word1 == word1.toLowerCase()) {
+//     return "LowerCase";
+//   }
+// }
+// console.log(getCase("javascript"));
 
 // Exercise 11
 
 // Create a function that takes  a string as argument (of a person’s first and last name) and returns a string with the first and last name swapped.
 // swapName("Ada Lovelace") ➞ "Lovelace Ada"
 // swapName(“Alan Turing”)➞  “Turing Alan”
+// function swapName(word1) {
+//   return word1.split(" ").reverse().join(` `);
+// }
+// console.log(swapName("Ada Lovelace"));
 
 // Exercise 12
 
 // Create a function that takes a string and returns a string with its letters in alphabetical order.
 // AlphabetSoup("javascript") ➞ "aacijprstv"
 // AlphabetSoup(“simplon”) ➞”ilmnops”
+// function AplhabetSoup(word){
+//     return word.split("").sort().join("");
+// }
+// console.log(AplhabetSoup("javascdxfsdfript sdsadsf"));
 
 // Exercise 13
 
 // Create a function that takes a number as argument and returns the incrementing (+1) for each odd number and decrementing (-1) for each even number.
 // incrementOrDecrement(5) ➞4
 // incrementOrDecrement(2) ➞3
-
-// console.log("functions2");
+// function incrementOrDecrement(number) {
+//   if (number % 2 === 0) {
+//     return number + 1;
+//   } else {
+//     return number - 1;
+//   }
+// }
+// console.log(incrementOrDecrement(9));
 
 // Exercise 1
 
@@ -193,6 +232,16 @@
 // Examples:
 // tipAmount(100, 'good') --> 20
 // tipAmount(40, 'fair') --> 6
+// function tipAmount(price, rate) {
+//   if (rate == "good") {
+//     return price * 0.2;
+//   } else if (rate == "fair") {
+//     return price * 0.15;
+//   }else {
+//     return price * 0.1;
+//   }
+// }
+// console.log(tipAmount(40, "fair"));
 
 // Exercise 2
 
@@ -204,6 +253,16 @@
 // Examples:
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
+// function totalAmount(price, rate) {
+//     if (rate == "good"){
+//         return (price*0.2)+price
+//     } else if (rate == "fair") {
+//         return (price * 0.15)+price;
+//     } else {
+//         return (price * 0.1)+price;
+//     }
+// }
+// console.log(totalAmount(40, "fair"));
 
 // Exercise 3
 
@@ -215,6 +274,17 @@
 // Examples:
 // splitAmount(100, 'good', 5) --> 24
 // splitAmount(40, 'fair', 2) --> 23
+
+// function splitAmount(price, rate, persons) {
+//   if (rate == "good") {
+//     return (price + price * 0.2) / persons;
+//   } else if (rate == "fair") {
+//     return (price + price * 0.15) / persons;
+//   } else {
+//     return (price + price * 0.1) / persons;
+//   }
+// }
+// console.log(splitAmount(40, "fair", 2));
 
 // Exercise 4
 
@@ -231,6 +301,17 @@
 // isVowel('A') --> true
 // isVowel(99) --> false
 // isVowel({e: 'Elephant'}) --> false
+// function isVowel(alphabet) {
+//   let vowels = ["a", "o", "e", "i", "u"];
+//   let result = false;
+//   for (i = 0; i <= vowels.length; i++) {
+//     if (vowels[i] == alphabet) {
+//       return (result = true);
+//     }
+//   }
+//   return result;
+// }
+// console.log(isVowel("e"));
 
 // Exercise 5
 
@@ -242,6 +323,21 @@
 // rockPaperScissors('rock', 'scissors') --> 'player 1'
 // rockPaperScissors('rock', 'paper') --> 'player 2'
 // rockPaperScissors('paper', 'paper') --> 'draw'
+// function rockPaperScissors(player1, player2){
+//     if(player1 == "rock" &&  player2 == "rock") return "Draw Play Again";
+//     else if(player1 == "paper" && player2 == "paper") return "Draw Play Again";
+//     else if(player1 == "scissors" && player2 == "scissors") return "Draw Play Again";
+
+//     else if(player1 == "rock" && player2 == "scissors") return "Winner: Player-1";
+//     else if(player1 == "paper" && player2 == "rock") return "Winner: Player-1";
+//     else if(player1 == "scissors" && player2 == "paper") return "Winner: Player-1";
+    
+//     else if(player2 == "rock" && player1 == "scissors") return "Winner: Player-2";
+//     else if(player2 == "paper" && player1 == "rock") return "Winner: Player-2";
+//     else if(player2 == "scissors" && player1 == "paper") return "Winner: Player-2";
+// }
+// console.log(rockPaperScissors("scissors", "paper"));
+
 
 // Exercise 6
 
@@ -251,7 +347,11 @@
 // Examples:
 // numberJoinerWhile(1, 10) --> '1_2_3_4_5_6_7_8_9_10'
 // numberJoinerWhile(12, 14) --> '12_13_14'
-
+function numberJoinerWhile(number1, number2) {
+    while (i = 0){
+        
+    }
+}
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "numberJoinerFor" which does the same thing as "numberJoinerWhile",
 // except using a "for" loop internally.
@@ -264,6 +364,8 @@
 // numberJoinerFancy(1, 10) --> '1_2_3_4_5_6_7_8_9_10'
 // numberJoinerFancy(1, 5, '~') --> 1~2~3~4~5
 // numberJoinerFancy(3, 6, '***BANANAS***') --> 1***BANANAS***2***BANANAS***3
+
+
 
 // Exercise 7
 
