@@ -381,10 +381,10 @@
 // function numberJoinerFor(start, end) {
 //   let lastNumber = "";
 //   let underLine = `***BANANAS***`;
-//   for (start = start; start <= end; start++) {
+//   for (start = start; start < end; start++) {
 //     lastNumber += start + underLine;
 //   }
-//   return lastNumber;
+//   return lastNumber+end;
 // }
 // console.log(numberJoinerFor(3, 6));
 
@@ -408,27 +408,48 @@
 //
 // Example:
 // findLongestWord('a book full of dogs') --> 'book'
-function findLongestWord(sentences) {
-    const words = sentences.split(` `);
-    let longestWord = ``;
-    for (i = 1; i <= sentences; i++){
+// function findLongestWord(sentences) {
+//   const words = sentences.split(` `);
+//   let longestWord = ``;
+//   for (let i = 0; i < words.length; i++) {
+//     if(longestWord.length < words[i].length){
+//         longestWord = words[i];
+//     }
 
-    }
-    }
+//   }
 
+//   return longestWord;
+// }
+// console.log(findLongestWord(`a book full of dogs hell`));
 
-   
+// let ehniih = 1;
+// let arrayss = [1,2,3,4,5,6,7,5];
+// for(let i = 0; i < arrayss.length; i++ ){
+//     if (ehniih < arrayss[i]){
+//         ehniih = arrayss[i]
+//     }
 
-console.log(findLongestWord(`a book full of dogs`));
+// }console.log(ehniih);
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function called "nicer"
 // It should clean up the language in its input sentence.
 // Forbidden words include heck, darn, dang, and crappy.
-//
 // Example:
 // nicer('mom get the heck in here and bring me a darn sandwich.')
 // > 'mom get the in here and bring me a sandwich.'
+function nicer(sentences) {
+  let forbiddenWords = [`heck`, `darn`, `dang`, `crappy`];
+  let sentence = sentences.split(" ");
+  for (let i = 0; i < forbiddenWords.length; i++) {
+    if (forbiddenWords == sentence) {
+    }
+  }
+  return forbiddenWords;
+}
+console.log();
+
+console.log(nicer(`mom get the heck in here and bring me a darn sandwich`));
 
 // Exercise 8
 
