@@ -93,7 +93,7 @@
 //   }
 //   return sum;
 // }
-// console.log(addUp(8));
+// console.log(addUp(5));
 
 // Exercise 5
 
@@ -102,13 +102,13 @@
 // isEmpty(“Chaima”)➞ false
 
 // function isEmpty(string) {
-//   if (string == "") {
+//   if (string == " ") {
 //     return "true";
 //   } else {
 //     return "False";
 //   }
 // }
-// console.log(isEmpty("Chaima"));
+// console.log(isEmpty(" "));
 
 // Exercise 6
 
@@ -123,7 +123,7 @@
 //     return "true";
 //   } else return "false";
 // }
-// console.log(isEqualStr("ehniih", "daraah"));
+// console.log(isEqualStr("rty6yt", "111111"));
 
 // Exercise 7
 
@@ -131,14 +131,17 @@
 // oneDevideByTwo(9,3)➞true
 // oneDevideByTwo(10,2)➞true
 // oneDevideByTwo(13,2)➞false
+
 // function oneDevideByTwo(a, b){
 //     if (a % b ==0){
 //         return "True"
-//     }else return "False"
+//     }else {
+//       return "False"
+//     }
 // }
-// console.log(oneDevideByTwo(20, 3));
-// console.log(oneDevideByTwo(20, 5));
-// console.log(oneDevideByTwo(20, 10));
+// console.log(oneDevideByTwo(9, 3));
+// console.log(oneDevideByTwo(10, 2));
+// console.log(oneDevideByTwo(13, 2));
 
 // Exercise 8
 
@@ -161,6 +164,7 @@
 // Write a function that validates whether two strings are identical. Make it case insensitive.
 // match(“HELLO WORLD”) and (”hello world”) → true
 // match("mask", "mAskinG") ➞ false
+
 // function match(word1, word2) {
 //   if (word1.toUpperCase() === word2.toUpperCase()) {
 //     return "True";
@@ -176,6 +180,7 @@
 // "lower" if lowercase and "mixed" for any mix of the two.
 // getCase("javascript..") ➞ "lower"
 // getCase("SHOUT!") ➞ "upper"
+
 // function getCase(word1) {
 //   if (word1 == word1.toUpperCase()) {
 //     return "UpperCase";
@@ -190,6 +195,7 @@
 // Create a function that takes  a string as argument (of a person’s first and last name) and returns a string with the first and last name swapped.
 // swapName("Ada Lovelace") ➞ "Lovelace Ada"
 // swapName(“Alan Turing”)➞  “Turing Alan”
+
 // function swapName(word1) {
 //   return word1.split(" ").reverse().join(` `);
 // }
@@ -200,16 +206,18 @@
 // Create a function that takes a string and returns a string with its letters in alphabetical order.
 // AlphabetSoup("javascript") ➞ "aacijprstv"
 // AlphabetSoup(“simplon”) ➞”ilmnops”
+
 // function AplhabetSoup(word){
 //     return word.split("").sort().join("");
 // }
-// console.log(AplhabetSoup("javascdxfsdfript sdsadsf"));
+// console.log(AplhabetSoup("javzascdxfsdfript sdsadsf"));
 
 // Exercise 13
 
 // Create a function that takes a number as argument and returns the incrementing (+1) for each odd number and decrementing (-1) for each even number.
 // incrementOrDecrement(5) ➞4
 // incrementOrDecrement(2) ➞3
+
 // function incrementOrDecrement(number) {
 //   if (number % 2 === 0) {
 //     return number + 1;
@@ -217,7 +225,7 @@
 //     return number - 1;
 //   }
 // }
-// console.log(incrementOrDecrement(9));
+// console.log(incrementOrDecrement(7));
 
 // Exercise 1
 
@@ -232,10 +240,11 @@
 // Examples:
 // tipAmount(100, 'good') --> 20
 // tipAmount(40, 'fair') --> 6
+
 // function tipAmount(price, rate) {
-//   if (rate == "good") {
+//   if (rate === "good") {
 //     return price * 0.2;
-//   } else if (rate == "fair") {
+//   } else if (rate === "fair") {
 //     return price * 0.15;
 //   }else {
 //     return price * 0.1;
@@ -253,14 +262,15 @@
 // Examples:
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
+
 // function totalAmount(price, rate) {
-//     if (rate == "good"){
-//         return (price*0.2)+price
-//     } else if (rate == "fair") {
-//         return (price * 0.15)+price;
-//     } else {
-//         return (price * 0.1)+price;
-//     }
+//   if (rate === "good") {
+//     return price * 0.2 + price;
+//   } else if (rate === "fair") {
+//     return price * 0.15 + price;
+//   } else {
+//     return price * 0.1 + price;
+//   }
 // }
 // console.log(totalAmount(40, "fair"));
 
@@ -284,7 +294,8 @@
 //     return (price + price * 0.1) / persons;
 //   }
 // }
-// console.log(splitAmount(40, "fair", 2));
+// console.log(splitAmount(100, "good", 5));
+// console.log(splitAmount(23, "fair", 2));
 
 // Exercise 4
 
