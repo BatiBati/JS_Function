@@ -458,7 +458,7 @@ function nicer(sentences) {
   }
   return forbiddenWords;
 }
-console.log();
+
 
 console.log(nicer(`mom get the heck in here and bring me a darn sandwich`));
 
